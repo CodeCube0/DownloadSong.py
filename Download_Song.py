@@ -1,15 +1,16 @@
 from pytube import YouTube
 
-file = open('song.txt', 'a')
+file = open('song.txt', 'w')
 stop = 'si'
 link = []
 
-print('Ti verrà chiesto quando hai finito basta inserire: y per il SI e n per il NO')
+print('Ti verrà chiesto quando se hai finito basta inserire: NO/no/n')
 
 while stop != 'no' and stop != 'n':
 
     link.append(input('Inserisci i link che vuoi scaricare: '))
     stop = input('Continuare: ')
+    stop = stop.lower()
 
 for element in link:
     file.write('\n' + element)

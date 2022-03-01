@@ -20,6 +20,7 @@ file.close()
 
 file = open('song.txt', 'r')
 
+print('Download in Corso......')
 for line in file:
     url = line
     try:
@@ -29,6 +30,8 @@ for line in file:
         stream.download()
     except:
         pass
+
+print('Download Terminato con Successo!')
 file.close()
 
 prova = os.listdir()

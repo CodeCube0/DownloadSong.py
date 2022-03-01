@@ -34,11 +34,11 @@ for line in file:
 print('Download Terminato con Successo!')
 file.close()
 
-prova = os.listdir()
+folderFile = os.listdir()
 
 x = 'mp4'
 
-for elemento in prova:
+for elemento in folderFile:
     if x in elemento:
         new = elemento.replace(x, "mp3")
 

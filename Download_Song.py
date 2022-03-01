@@ -8,7 +8,6 @@ link = []
 print('Ti verrà chiesto quando se hai finito basta inserire: NO/no/n')
 
 while stop != 'no' and stop != 'n':
-
     link.append(input('Inserisci i link che vuoi scaricare: '))
     stop = input('Continuare: ')
     stop = stop.lower()
@@ -39,7 +38,7 @@ folderFile = os.listdir()
 x = 'mp4'
 
 for elemento in folderFile:
-    if x in elemento:
+    if x in elemento:  # controlla se in elemento c'è x
         new = elemento.replace(x, "mp3")
 
         os.rename(elemento, new)

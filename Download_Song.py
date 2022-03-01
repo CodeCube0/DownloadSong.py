@@ -1,4 +1,5 @@
 from pytube import YouTube
+import os
 
 file = open('song.txt', 'w')
 stop = 'si'
@@ -29,3 +30,13 @@ for line in file:
     except:
         pass
 file.close()
+
+prova = os.listdir()
+
+x = 'mp4'
+
+for elemento in prova:
+    if x in elemento:
+        new = elemento.replace(x, "mp3")
+
+        os.rename(elemento, new)

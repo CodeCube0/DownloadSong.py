@@ -5,7 +5,7 @@ file = open('song.txt', 'w')
 stop = 'si'
 link = []
 
-print('Ti verrà chiesto quando se hai finito basta inserire: NO/no/n')
+print('Ti verrà chiesto se vuoi continuare, se hai finito basta inserire: NO')
 
 while stop != 'no' and stop != 'n':
     link.append(input('Inserisci i link che vuoi scaricare: '))
